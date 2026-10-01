@@ -1,0 +1,22 @@
+{
+  "name": "nonogram-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "离线黑白数织（Nonogram）行列约束求解、唯一性证明、提示与持久化后端（API + CLI）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "start": "node --experimental-strip-types src/server.ts",
+    "cli": "node --experimental-strip-types src/cli.ts",
+    "demo": "node --experimental-strip-types src/demo.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
