@@ -1,0 +1,25 @@
+{
+  "name": "nonogram-backend",
+  "version": "1.0.0",
+  "description": "黑白数织(Nonogram)行列约束求解与唯一性证明后端",
+  "main": "dist/api.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/src/api.js",
+    "cli": "node dist/src/cli.js",
+    "seed": "node dist/src/cli.js seed",
+    "demo": "node dist/src/demo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}
